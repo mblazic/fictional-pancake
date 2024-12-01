@@ -1,4 +1,6 @@
 1. Prerequirements
+-------------------
+
 1.1 Edit GNU/Linux (minikube host)[1]  or Windows(public external client)[2] hosts file
 [1] echo "<minikube-ip> myservice.example.com" >> /etc/hosts
 [2] add line:
@@ -31,11 +33,13 @@
     git checkout v1.0
 
 
-<h1>2. Project - tronius-devops-task - start</h1>
+2. Project - tronius-devops-task - start
+-----------------------------------------
+
 2.1 execute:
       bash 00-minikube-up.sh
     The bash script will export the version of the Kubernetes version, check if kubectl and minikube
-    binaries are ready and set the appropriate driver. Lastly, it will start the minikube cluster.
+    binaries are ready and set the appropriate driver. Lastly, it will start the minikube Kubernetes cluster.
 
 
 2.2 execute:
@@ -54,6 +58,7 @@
     If certificate needs to be revoked, please execute:
     openssl ca -config ssl/openssl-ca.cfg -revoke ssl/certs/example.pem
 
+    Password for current CA is: tronius
     Check file ssl/index.txt to confirm successful revocation.
 
 
@@ -75,11 +80,13 @@
         via mini kube FQDN (minikube host)
         curl -kv https://myservice.example.com
 
-        via web browser (Windows public external client) - minikube tunnel:
+        via web browser (Windows public external client) - access via minikube tunnel:
         https://myservice.example.com/
 
 
-<h1>3. Project - tronius-devops-task - stop</h1>
+3. Project - tronius-devops-task - stop
+----------------------------------------
+
 3.1 execute:
       bash 98-project-down.sh
     The bash script will stop and remove all previously created Kubernetes objects related to tronius-devops-task.
