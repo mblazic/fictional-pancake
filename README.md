@@ -1,3 +1,3 @@
 <p align="center">
-Tronius - DevOps Task: Certificates and Kubernetes
+DevOps Task: Certificates and Kubernetes
 </p>
