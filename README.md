@@ -1,17 +1,16 @@
-fefwrgDevOps Task: Certificates and Kubernetes
+# fictional-pancake 
 
-Subtask 1: Certificate Preparation
+**Subtask 1: Certificate Preparation**
 
-Generate client and server certificates for the domain myservice.example.com,\
-ensuring they are signed by your designated CA certificate. This will authenticate\
-and secure communications between
-the clients and the server.
+Generate client and server certificates for the domain myservice.example.com, ensuring they are signed by your designated CA certificate.\
+This will authenticate and secure communications between the clients and the server.
 
-Subtask 2: Kubernetes Deployment
+<br>
 
-Configure a Kubernetes deployment that includes an Ingress nginx controller routing\
-HTTPS traffic to port 8443. This setup should target a pod service running an\
-HTTPS-enabled daemon, accessible publicly.
+**Subtask 2: Kubernetes Deployment**
+
+Configure a Kubernetes deployment that includes an Ingress nginx controller routing HTTPS traffic to port 8443. This setup should target\
+a pod service running an HTTPS-enabled daemon, accessible publicly.
 
 Domain should be myservice.example.com.
 
@@ -29,6 +28,8 @@ Domain should be myservice.example.com.
 > •Ensure the HTTPS service within the pod is configured to utilize the
 > certificates generated in step 1.
 
+<br>
+
 **Deployment Files:**
 
 > **Prepare and detail Kubernetes YAML deployment files for:**\
@@ -42,12 +43,16 @@ Domain should be myservice.example.com.
 > •Ensure both the Ingress controller and the HTTPS service pods are utilizing the same certificates for SSL/TLS\
 > termination, providing a secure, encrypted communication channel.
 
+<br>
+
 For this task, you may utilize Docker Desktop's Kubernetes feature
 (available on Windows and MacOS) or MiniKube (for Linux environments).\
 Alternatively, you are welcome to employ any Kubernetes environment of
 your preference.
 
-Requirements
+<br>
+
+Requirements:
 
 > **1.Documentation:**\
 > •Clearly document all necessary steps and technical specifications
